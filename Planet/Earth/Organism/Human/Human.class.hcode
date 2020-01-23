@@ -1,0 +1,14 @@
+import universe.advanced.Intelligence;
+import universe.earth.organism.Organism;
+
+class Human extends Organism implements Intelligence {
+    
+    private void think() {
+        if(this.getSex() == Sex.FEMALE) {
+            /* Redacted 3,244,532,522,198,282 lines */
+        } elseif(this.getSex() == Sex.MALE) {
+            /* Redacted 16 lines */
+        }
+    }
+    
+}
