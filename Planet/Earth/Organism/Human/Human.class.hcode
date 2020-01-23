@@ -11,4 +11,27 @@ class Human extends Organism implements Intelligence {
         }
     }
     
+    public function getGirlfriend()
+    {
+
+		$girlfriend = new self();
+		$girlfriend->setSex(Sex.FEMALE);
+		$girlfriend->setSkills(['cooking', 'cleaning']);
+
+		return $girlfriend;
+    }
+
+    public function cleanHouse()
+    {
+    	$house = $this->getHouse();
+
+    	if ($house->isDirty()) {
+    		$girlfriend = $this->getGirlfriend();
+	    	$girlfriend->clean($house);
+	    	$girlfriend->increaseSkill('cleaning');
+    	}
+
+    	return $house;
+    }
+
 }
