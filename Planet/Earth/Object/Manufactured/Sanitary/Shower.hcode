@@ -1,0 +1,4 @@
+class Shower { 
+  //TODO This should be a float.. Right??
+  boolean Temperature;
+}
